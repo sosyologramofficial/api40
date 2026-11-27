@@ -468,10 +468,10 @@ VIDEO_MODELS_CONFIG = {
         "action_id": "genvideo_1_sec_bytedance_seedance2.0fast_{sound}_{resolution}",
         "action_id_i2v": "genvideo_1_sec_bytedance_custom_seedance2.0fast_{sound}_{frame_mode}_{resolution}",
         "credit_map": {
-            ("none", "480p"): 3,
-            ("none", "720p"): 6,
-            ("vendor", "480p"): 3,
-            ("vendor", "720p"): 6,
+            ("none", "480p"): 4,
+            ("none", "720p"): 8,
+            ("vendor", "480p"): 4,
+            ("vendor", "720p"): 8,
         },
         "reference_media_limit": {
             "supported_types": ["image", "video"],
@@ -500,10 +500,10 @@ VIDEO_MODELS_CONFIG = {
         "action_id": "genvideo_1_sec_bytedance_seedance2.0mini_{sound}_{resolution}",
         "action_id_i2v": "genvideo_1_sec_bytedance_custom_seedance2.0mini_{sound}_{frame_mode}_{resolution}",
         "credit_map": {
-            ("none", "480p"): 2,
-            ("none", "720p"): 4,
-            ("vendor", "480p"): 2,
-            ("vendor", "720p"): 4,
+            ("none", "480p"): 3,
+            ("none", "720p"): 5,
+            ("vendor", "480p"): 3,
+            ("vendor", "720p"): 5,
         },
         "reference_media_limit": {
             "supported_types": ["image", "video"],
@@ -532,13 +532,13 @@ VIDEO_MODELS_CONFIG = {
         "action_id": "genvideo_1_sec_bytedance_seedance2.0std_{sound}_{resolution}",
         "action_id_i2v": "genvideo_1_sec_bytedance_custom_seedance2.0std_{sound}_{frame_mode}_{resolution}",
         "credit_map": {
-            ("none", "480p"): 4,
-            ("none", "720p"): 8,
-            ("none", "1080p"): 18,
+            ("none", "480p"): 5,
+            ("none", "720p"): 10,
+            ("none", "1080p"): 20,
             ("none", "4K"): 40,
-            ("vendor", "480p"): 4,
-            ("vendor", "720p"): 8,
-            ("vendor", "1080p"): 18,
+            ("vendor", "480p"): 5,
+            ("vendor", "720p"): 10,
+            ("vendor", "1080p"): 20,
             ("vendor", "4K"): 40,
         },
         "reference_media_limit": {
@@ -568,11 +568,17 @@ VIDEO_MODELS_CONFIG = {
         "action_id": "genvideo_1_sec_bytedance_seedance2.5std_{sound}_{resolution}",
         "action_id_i2v": "genvideo_1_sec_bytedance_custom_seedance2.5std_{sound}_{frame_mode}_{resolution}",
         "credit_map": {
+            ("ReferenceToVideo", "none", "480p"): 7,
+            ("ReferenceToVideo", "none", "720p"): 15,
+            ("ReferenceToVideo", "none", "1080p"): 36,
+            ("ReferenceToVideo", "vendor", "480p"): 7,
+            ("ReferenceToVideo", "vendor", "720p"): 15,
+            ("ReferenceToVideo", "vendor", "1080p"): 36,
             ("none", "480p"): 6,
-            ("none", "720p"): 12,
+            ("none", "720p"): 14,
             ("none", "1080p"): 30,
             ("vendor", "480p"): 6,
-            ("vendor", "720p"): 12,
+            ("vendor", "720p"): 14,
             ("vendor", "1080p"): 30,
         },
         "reference_media_limit": {
@@ -710,6 +716,12 @@ VIDEO_MODELS_CONFIG = {
         "action_id": "genvideo_1_sec_alibaba_wan3.0_{sound}_{resolution}",
         "action_id_i2v": "genvideo_1_sec_alibaba_custom_wan3.0_{sound}_{frame_mode}_1080p",
         "credit_map": {
+            ("ReferenceToVideo", "none", "480p"): 3,
+            ("ReferenceToVideo", "none", "720p"): 6,
+            ("ReferenceToVideo", "none", "1080p"): 12,
+            ("ReferenceToVideo", "vendor", "480p"): 3,
+            ("ReferenceToVideo", "vendor", "720p"): 6,
+            ("ReferenceToVideo", "vendor", "1080p"): 12,
             ("none", "480p"): 3,
             ("none", "720p"): 5,
             ("none", "1080p"): 10,
@@ -834,11 +846,11 @@ VIDEO_MODELS_CONFIG = {
             ("TextToVideo", "none", "360p"): 2,
             ("TextToVideo", "none", "720p"): 5,
             ("TextToVideo", "none", "1080p"): 8,
-            ("TextToVideo", "none", "4k"): 8,
+            ("TextToVideo", "none", "4k"): 15,
             ("TextToVideo", "vendor", "360p"): 2,
             ("TextToVideo", "vendor", "720p"): 5,
             ("TextToVideo", "vendor", "1080p"): 8,
-            ("TextToVideo", "vendor", "4k"): 8,
+            ("TextToVideo", "vendor", "4k"): 15,
             ("ImageToVideo", "none", "360p"): 2,
             ("ImageToVideo", "none", "720p"): 5,
             ("ImageToVideo", "none", "1080p"): 8,
@@ -886,11 +898,11 @@ VIDEO_MODELS_CONFIG = {
         "action_id_i2v": "genvideo_1_sec_kling_custom_4.0std_{sound}_{frame_mode}_{resolution}",
         "credit_map": {
             ("TextToVideo", "none", "720p"): 9,
-            ("TextToVideo", "enable", "720p"): 11,
-            ("TextToVideo", "vendor", "720p"): 11,
+            ("TextToVideo", "enable", "720p"): 9,
+            ("TextToVideo", "vendor", "720p"): 9,
             ("TextToVideo", "none", "1080p"): 14,
-            ("TextToVideo", "enable", "1080p"): 16,
-            ("TextToVideo", "vendor", "1080p"): 16,
+            ("TextToVideo", "enable", "1080p"): 14,
+            ("TextToVideo", "vendor", "1080p"): 14,
             ("ImageToVideo", "none", "single", "720p"): 9,
             ("ImageToVideo", "enable", "single", "720p"): 9,
             ("ImageToVideo", "vendor", "single", "720p"): 9,
@@ -904,11 +916,11 @@ VIDEO_MODELS_CONFIG = {
             ("ImageToVideo", "enable", "startend", "1080p"): 14,
             ("ImageToVideo", "vendor", "startend", "1080p"): 14,
             ("none", "720p"): 9,
-            ("vendor", "720p"): 11,
-            ("enable", "720p"): 11,
+            ("vendor", "720p"): 9,
+            ("enable", "720p"): 9,
             ("none", "1080p"): 14,
-            ("vendor", "1080p"): 16,
-            ("enable", "1080p"): 16,
+            ("vendor", "1080p"): 14,
+            ("enable", "1080p"): 14,
         },
     },
 "kling_3_0": {
@@ -1183,8 +1195,8 @@ VIDEO_MODELS_CONFIG = {
         "action_id": "genvideo_1_sec_vidu_q2_{sound}_{resolution}",
         "action_id_i2v": "genvideo_1_sec_vidu_custom_q2pro_{sound}_{frame_mode}",
         "credit_map": {
-            ("ImageToVideo", "none", "1080p"): 3,
-            ("ImageToVideo", "vendor", "1080p"): 3,
+            ("ImageToVideo", "none", "1080p"): 5,
+            ("ImageToVideo", "vendor", "1080p"): 5,
             ("TextToVideo", "none", "540p"): 1,
             ("TextToVideo", "none", "720p"): 2,
             ("TextToVideo", "none", "1080p"): 3,
@@ -1248,10 +1260,10 @@ VIDEO_MODELS_CONFIG = {
         "credit_map": {
             ("ImageToVideo", "none", "540p"): 3,
             ("ImageToVideo", "none", "720p"): 3,
-            ("ImageToVideo", "none", "1080p"): 3,
+            ("ImageToVideo", "none", "1080p"): 5,
             ("ImageToVideo", "vendor", "540p"): 3,
             ("ImageToVideo", "vendor", "720p"): 3,
-            ("ImageToVideo", "vendor", "1080p"): 3,
+            ("ImageToVideo", "vendor", "1080p"): 5,
             ("TextToVideo", "none", "540p"): 1,
             ("TextToVideo", "none", "720p"): 2,
             ("TextToVideo", "none", "1080p"): 3,
@@ -1414,6 +1426,15 @@ VIDEO_MODELS_CONFIG = {
             "480p": "genvideo_1_sec_minimax_custom_minimaxh3max_{sound}_{frame_mode}_480p",
         },
         "credit_map": {
+            ("ReferenceToVideo", "none", "480p"): 6,
+            ("ReferenceToVideo", "vendor", "480p"): 6,
+            ("ReferenceToVideo", "enable", "480p"): 6,
+            ("ReferenceToVideo", "none", "768p"): 9,
+            ("ReferenceToVideo", "vendor", "768p"): 9,
+            ("ReferenceToVideo", "enable", "768p"): 9,
+            ("ReferenceToVideo", "none", "2k"): 15,
+            ("ReferenceToVideo", "vendor", "2k"): 15,
+            ("ReferenceToVideo", "enable", "2k"): 15,
             ("none", "480p"): 3,
             ("vendor", "480p"): 3,
             ("enable", "480p"): 3,
@@ -1538,13 +1559,13 @@ AVAILABLE_MODELS = {
             "supports_start_frame": True,
             "supports_end_frame": True,
             "supports_reference_images": True,
-            "max_reference_images": 10,
+            "max_reference_images": 5,
             "supported_modes": ["TextToVideo", "ImageToVideo", "ReferenceToVideo"],
             "supported_frame_modes": ["single", "startend"],
             "supported_sizes": ["16:9", "9:16", "1:1"],
             "supported_durations_by_resolution": {
-                "1080p": list(range(4, 12)),
-                "720p": list(range(4, 24)),
+                "1080p": list(range(4, 10)),
+                "720p": list(range(4, 23)),
                 "480p": list(range(4, 31)),
             },
             "supported_durations": list(range(4, 31)),
@@ -1555,8 +1576,8 @@ AVAILABLE_MODELS = {
                 "ReferenceToVideo": ["480p", "720p", "1080p"],
             },
             "constraints": [
-                {"if": {"resolution": "1080p"}, "then": {"duration": list(range(4, 12))}},
-                {"if": {"resolution": "720p"}, "then": {"duration": list(range(4, 24))}},
+                {"if": {"resolution": "1080p"}, "then": {"duration": list(range(4, 10))}},
+                {"if": {"resolution": "720p"}, "then": {"duration": list(range(4, 23))}},
                 {"if": {"resolution": "480p"}, "then": {"duration": list(range(4, 31))}},
             ],
             "default_size": "16:9",
@@ -1564,8 +1585,8 @@ AVAILABLE_MODELS = {
             "default_duration": 5,
             "duration_config": {'type': 'continuous', 'min': 4, 'max': 30, 'step': 1, 'default': 5},
             "duration_config_by_resolution": {
-                "1080p": {'type': 'continuous', 'min': 4, 'max': 11, 'step': 1, 'default': 5},
-                "720p": {'type': 'continuous', 'min': 4, 'max': 23, 'step': 1, 'default': 5},
+                "1080p": {'type': 'continuous', 'min': 4, 'max': 9, 'step': 1, 'default': 5},
+                "720p": {'type': 'continuous', 'min': 4, 'max': 22, 'step': 1, 'default': 5},
                 "480p": {'type': 'continuous', 'min': 4, 'max': 30, 'step': 1, 'default': 5},
             },
             "max_prompt_length": 20000
@@ -1578,10 +1599,15 @@ AVAILABLE_MODELS = {
             "supports_start_frame": True,
             "supports_end_frame": True,
             "supports_reference_images": True,
-            "max_reference_images": 10,
+            "max_reference_images": 5,
             "supported_modes": ["TextToVideo", "ImageToVideo", "ReferenceToVideo"],
             "supported_frame_modes": ["single", "startend"],
             "supported_sizes": ["16:9", "9:16", "1:1"],
+            "supported_durations_by_resolution": {
+                "1080p": list(range(2, 28)),
+                "720p": list(range(2, 31)),
+                "480p": list(range(2, 31)),
+            },
             "supported_durations": list(range(2, 31)),
             "supported_resolutions": ["480p", "720p", "1080p"],
             "supported_resolutions_by_mode": {
@@ -1589,9 +1615,20 @@ AVAILABLE_MODELS = {
                 "TextToVideo": ["480p", "720p", "1080p"],
                 "ReferenceToVideo": ["480p", "720p", "1080p"],
             },
+            "constraints": [
+                {"if": {"resolution": "1080p"}, "then": {"duration": list(range(2, 28))}},
+                {"if": {"resolution": "720p"}, "then": {"duration": list(range(2, 31))}},
+                {"if": {"resolution": "480p"}, "then": {"duration": list(range(2, 31))}},
+            ],
             "default_size": "16:9",
             "default_resolution": "720p",
             "default_duration": 5,
+            "duration_config": {'type': 'continuous', 'min': 2, 'max': 30, 'step': 1, 'default': 5},
+            "duration_config_by_resolution": {
+                "1080p": {'type': 'continuous', 'min': 2, 'max': 27, 'step': 1, 'default': 5},
+                "720p": {'type': 'continuous', 'min': 2, 'max': 30, 'step': 1, 'default': 5},
+                "480p": {'type': 'continuous', 'min': 2, 'max': 30, 'step': 1, 'default': 5},
+            },
             "max_prompt_length": 20000
         },
         {
@@ -1602,7 +1639,7 @@ AVAILABLE_MODELS = {
             "supports_start_frame": True,
             "supports_end_frame": True,
             "supports_reference_images": True,
-            "max_reference_images": 10,
+            "max_reference_images": 5,
             "supported_modes": ["TextToVideo", "ImageToVideo", "ReferenceToVideo"],
             "supported_frame_modes": ["single", "startend"],
             "supported_sizes": ["16:9", "9:16"],
@@ -2347,18 +2384,22 @@ def resolve_video_action_and_credit(
             action_id_str = model_data["action_id"].format(sound=action_id_sound, resolution=resolution)
 
     credit_cost = None
-    if action_id_str in CYBERLINK_ACTION_CREDITS:
+    credit_map = model_data.get("credit_map")
+    if credit_map:
+        sound_key = str(sound).lower()
+        alt_sound = {"on": "vendor", "auto": "vendor", "enable": "vendor", "off": "none"}.get(sound_key, sound_key)
+        for s_candidate in (sound, sound_key, alt_sound):
+            credit_cost = credit_map.get((effect_mode, s_candidate, frame_mode, resolution))
+            if credit_cost is None:
+                credit_cost = credit_map.get((effect_mode, s_candidate, resolution))
+            if credit_cost is None:
+                credit_cost = credit_map.get((s_candidate, resolution))
+            if credit_cost is not None:
+                break
+    if credit_cost is None and action_id_str in CYBERLINK_ACTION_CREDITS:
         credit_cost = CYBERLINK_ACTION_CREDITS[action_id_str]
-    else:
-        credit_map = model_data.get("credit_map")
-        if credit_map:
-            credit_cost = credit_map.get((effect_mode, sound, frame_mode, resolution))
-            if credit_cost is None:
-                credit_cost = credit_map.get((effect_mode, sound, resolution))
-            if credit_cost is None:
-                credit_cost = credit_map.get((sound, resolution))
-        if credit_cost is None:
-            credit_cost = model_data.get("credit", 3)
+    if credit_cost is None:
+        credit_cost = model_data.get("credit", 3)
 
     return action_id_str, credit_cost
 
