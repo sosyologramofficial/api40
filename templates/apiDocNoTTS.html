@@ -1517,8 +1517,8 @@ print(resp.json())</code></pre>
                                 <td>integer</td>
                                 <td><span class="badge optional">Optional</span></td>
                                 <td>Duration in seconds (default: <code>5</code> for Seedance, Wan, Gemini; <code>4</code> for Veo):<br>
-                                • <strong>seedance_2_5:</strong> <code>4</code> to <code>30</code> seconds (<code>1080p</code>: 4–11s, <code>720p</code>: 4–23s, <code>480p</code>: 4–30s)<br>
-                                • <strong>wan_3_0:</strong> <code>2</code> to <code>30</code> seconds<br>
+                                • <strong>seedance_2_5:</strong> <code>4</code> to <code>30</code> seconds (<code>1080p</code>: 4–9s, <code>720p</code>: 4–22s, <code>480p</code>: 4–30s)<br>
+                                • <strong>wan_3_0:</strong> <code>2</code> to <code>30</code> seconds (<code>1080p</code>: 2–27s, <code>720p</code>: 2–30s, <code>480p</code>: 2–30s)<br>
                                 • <strong>gemini_omni_flash:</strong> <code>3</code> to <code>10</code> seconds<br>
                                 • <strong>veo_3_1_fast:</strong> <code>4</code>, <code>6</code>, <code>8</code> seconds</td>
                             </tr>
@@ -1557,8 +1557,8 @@ print(resp.json())</code></pre>
                 <div class="alert info">
                     <strong>📌 Video Model Info:</strong>
                     <ul>
-                        <li><strong>seedance_2_5 (default):</strong> Prompt max 20,000 chars. Supports Text-to-Video, Image-to-Video (Start Frame, Start + End Frame), and Reference-to-Video (max 5 reference images). Resolutions: <code>480p</code>, <code>720p</code>, <code>1080p</code> (default: <code>720p</code>). Durations: 1080p (4–11s), 720p (4–23s), 480p (4–30s). Aspect ratios: <code>16:9</code>, <code>9:16</code>, <code>1:1</code> (default: <code>16:9</code>).</li>
-                        <li><strong>wan_3_0:</strong> Prompt max 20,000 chars. Supports Text-to-Video, Image-to-Video (1080p only), and Reference-to-Video (max 5 reference images). Durations: 2–30 seconds (default: 5s). Resolutions: <code>480p</code>, <code>720p</code>, <code>1080p</code> (default: <code>720p</code>). Aspect ratios: <code>16:9</code>, <code>9:16</code>, <code>1:1</code> (default: <code>16:9</code>).</li>
+                        <li><strong>seedance_2_5 (default):</strong> Prompt max 20,000 chars. Supports Text-to-Video, Image-to-Video (Start Frame, Start + End Frame), and Reference-to-Video (max 5 reference images). Resolutions: <code>480p</code>, <code>720p</code>, <code>1080p</code> (default: <code>720p</code>). Durations: 1080p (4–9s), 720p (4–22s), 480p (4–30s). Aspect ratios: <code>16:9</code>, <code>9:16</code>, <code>1:1</code> (default: <code>16:9</code>).</li>
+                        <li><strong>wan_3_0:</strong> Prompt max 20,000 chars. Supports Text-to-Video, Image-to-Video (1080p only), and Reference-to-Video (max 5 reference images). Durations: 1080p (2–27s), 720p (2–30s), 480p (2–30s) (default: 5s). Resolutions: <code>480p</code>, <code>720p</code>, <code>1080p</code> (default: <code>720p</code>). Aspect ratios: <code>16:9</code>, <code>9:16</code>, <code>1:1</code> (default: <code>16:9</code>).</li>
                         <li><strong>gemini_omni_flash:</strong> Prompt max 3,500 chars. Supports Text-to-Video, Image-to-Video, and Reference-to-Video (max 5 reference images). Durations: 3–10 seconds (default: 5s). Resolutions: <code>360p</code>, <code>720p</code>, <code>1080p</code>, <code>4k</code> (default: <code>720p</code>). Aspect ratios: <code>16:9</code>, <code>9:16</code> (default: <code>16:9</code>).</li>
                         <li><strong>veo_3_1_fast:</strong> Prompt max 4,000 chars. Supports Text-to-Video and Image-to-Video (Start Frame, Start + End Frame). Durations: <code>4</code>, <code>6</code>, <code>8</code> seconds (default: 4s). Resolutions: <code>720p</code>, <code>1080p</code>, <code>4k</code> (default: <code>720p</code>). Aspect ratios: <code>16:9</code>, <code>9:16</code> (default: <code>16:9</code>). Reference images not supported.</li>
                     </ul>
@@ -2043,10 +2043,6 @@ print(resp.json())</code></pre>
             <!-- Errors -->
             <section id="errors">
                 <h2><span class="emoji">❌</span> Error Responses & Limits</h2>
-
-                <div class="alert warning">
-                    <strong>⏱️ Minimum Interval Between Operations:</strong> There must be at least <strong>1 minute</strong> between each operation (generation request). Any automation or script built on this API must take this interval into account and wait at least 1 minute between consecutive requests.
-                </div>
 
                 <h3>Common Errors</h3>
                 <div class="response-box">
